@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  @keyframes shimmer-red {
+    0% {
+      text-shadow: 0 0 5px rgba(239, 68, 68, 0.2);
+      color: #ef4444;
+    }
+    50% {
+      text-shadow: 0 0 20px rgba(239, 68, 68, 0.8), 0 0 30px rgba(239, 68, 68, 0.4);
+      color: #f87171;
+    }
+    100% {
+      text-shadow: 0 0 5px rgba(239, 68, 68, 0.2);
+      color: #ef4444;
+    }
+  }
+}
+
+.animate-shimmer-red {
+  animation: shimmer-red 2s infinite ease-in-out;
+}
+
