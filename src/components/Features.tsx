@@ -1,10 +1,8 @@
 import { 
-  Terminal, 
   ShieldCheck, 
   Zap, 
   Settings, 
-  MessageSquare, 
-  Clock 
+  MessageSquare 
 } from 'lucide-react';
 import { motion } from 'framer-motion';
 
@@ -31,25 +29,11 @@ const features = [
     bg: 'bg-blue-500/10'
   },
   {
-    title: 'Проверка игроков',
-    description: 'Автоматизация процесса проверки на читы и взаимодействия с подозреваемыми.',
-    icon: Terminal,
-    color: 'text-purple-500',
-    bg: 'bg-purple-500/10'
-  },
-  {
     title: 'Умные бинды',
     description: 'Полная кастомизация клавиш под любые административные команды вашего сервера.',
     icon: Settings,
     color: 'text-emerald-500',
     bg: 'bg-emerald-500/10'
-  },
-  {
-    title: 'Логи действий',
-    description: 'Ведение истории всех выданных наказаний для составления отчетов руководству.',
-    icon: Clock,
-    color: 'text-gray-400',
-    bg: 'bg-gray-400/10'
   }
 ];
 
@@ -66,7 +50,7 @@ const Features = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {features.map((feature, index) => (
             <motion.div
               key={index}
